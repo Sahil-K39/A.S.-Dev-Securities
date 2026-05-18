@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-background": "#e5e2e1",
+                    "on-primary": "#690005",
+                    "on-tertiary": "#003549",
+                    "on-secondary": "#690005",
+                    "on-tertiary-fixed-variant": "#004d68",
+                    "secondary": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "secondary-container": "#911715",
+                    "on-tertiary-container": "#002d3f",
+                    "tertiary-fixed": "#c2e8ff",
+                    "outline-variant": "#5e3f3b",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#001e2c",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-variant": "#353534",
+                    "on-secondary-fixed-variant": "#8d1413",
+                    "primary-container": "#ff5449",
+                    "surface-container-highest": "#353534",
+                    "outline": "#af8783",
+                    "on-primary-fixed": "#410002",
+                    "on-primary-container": "#5c0004",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#77d1ff",
+                    "on-surface": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#93000a",
+                    "inverse-primary": "#c00011",
+                    "on-secondary-fixed": "#410002",
+                    "surface-dim": "#131313",
+                    "tertiary": "#77d1ff",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-container": "#ff9f94",
+                    "surface-tint": "#ffb4ab",
+                    "tertiary-container": "#269bcb",
+                    "primary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-on-surface": "#313030",
+                    "surface-container": "#201f1f",
+                    "secondary-fixed": "#ffdad6",
+                    "surface": "#131313",
+                    "on-surface-variant": "#e8bcb7",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-error": "#690005",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #EAEAEA;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .glass-card {
+            backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 rounded-full mt-6 mx-auto w-[90%] max-w-7xl bg-neutral-900/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="font-['Epilogue'] text-2xl font-bold tracking-tighter text-neutral-100">NOIR</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-neutral-100 font-bold border-b-2 border-red-600 pb-1 font-['Epilogue'] tracking-[0.15em] uppercase text-sm hover:scale-105 transition-transform duration-300" href="#">Portfolio</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors font-['Epilogue'] tracking-[0.15em] uppercase text-sm hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors font-['Epilogue'] tracking-[0.15em] uppercase text-sm hover:scale-105 transition-transform duration-300" href="#">Philosophy</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors font-['Epilogue'] tracking-[0.15em] uppercase text-sm hover:scale-105 transition-transform duration-300" href="#">Archive</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-['Epilogue'] text-sm uppercase tracking-widest font-bold hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,84,73,0.3)] active:scale-95">
+            Connect
+        </button>
+</nav>
+<main class="pt-40 pb-32 max-w-7xl mx-auto px-8">
+<!-- Hero Header -->
+<header class="mb-24 max-w-4xl">
+<p class="font-label text-secondary text-sm tracking-[0.3em] uppercase mb-4">The Work</p>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+                Curating <span class="text-primary-container">Excellence</span> through Digital Craft.
+            </h1>
+<div class="flex flex-wrap gap-4 items-center">
+<span class="w-12 h-px bg-outline-variant"></span>
+<p class="font-body text-outline text-lg max-w-xl">
+                    A selection of premium interfaces and strategic experiences designed for high-end boutique environments.
+                </p>
+</div>
+</header>
+<!-- Filters -->
+<section class="mb-16">
+<div class="flex flex-wrap items-center gap-2 no-scrollbar overflow-x-auto pb-4">
+<button class="px-8 py-3 rounded-full bg-primary-container text-on-primary-container font-label text-xs tracking-widest hover:scale-105 transition-transform">ALL</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high text-on-surface font-label text-xs tracking-widest border border-outline-variant/10 hover:bg-surface-bright transition-colors">APPS</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high text-on-surface font-label text-xs tracking-widest border border-outline-variant/10 hover:bg-surface-bright transition-colors">WEBSITES</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high text-on-surface font-label text-xs tracking-widest border border-outline-variant/10 hover:bg-surface-bright transition-colors">SECURITY</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high text-on-surface font-label text-xs tracking-widest border border-outline-variant/10 hover:bg-surface-bright transition-colors">BRANDING</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high text-on-surface font-label text-xs tracking-widest border border-outline-variant/10 hover:bg-surface-bright transition-colors">MARKETING</button>
+</div>
+</section>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+<!-- Project 1: Large Asymmetric -->
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 group-hover:scale-[0.98]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" data-alt="Abstract minimalist digital interface with sleek glass textures and ruby red neon accents in a dark studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn3yh9GSAv0DnRC_gib3m1Qeh2wEMXvIQ4oRRj7sZQ34aiH39ttAprfxu0bCP36-Lyo41_9V-2cKza_QbE9YnwpWPMewhpUA3GzW8G25DxirvRt1QnQScPda9nhjaZp9Mp5BCFgu5J2r2tRCz5-PEKTlw-5U3E9HVQbK562TQQYHb5xEEOv7OAo1VGx0kTtYoBpV88u47akBUPfFSNqlDIq_Zqu2cQuu3FuLyt782KBwQIvq1DNVIWufPzrMnh5OUw6gX2Q7Y5ENZ8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+<div>
+<span class="text-primary-container font-label text-[10px] tracking-widest">DIGITAL PRODUCT / 2024</span>
+<h3 class="font-headline text-3xl font-bold mt-2 uppercase tracking-wide">Obsidian Core</h3>
+</div>
+<div class="w-12 h-12 rounded-full border border-primary-container/30 flex items-center justify-center group-hover:bg-primary-container transition-all group-hover:border-transparent">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Side Vertical -->
+<div class="lg:col-span-4 group cursor-pointer pt-12">
+<div class="relative h-full overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 group-hover:scale-[0.98]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Close-up of a premium mechanical keyboard with red backlight in a dimly lit dark tech aesthetic room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT7vZzu1H0EMkQcyq6kVrqHKCgnJAJWQjFY3tQc-918W7vNdAZCreBVTkFJ4CNqKpa5JHzy1UWIw4g1LyUkTx1zWckCwFU5rJGK8lAoUdO7VxR5yNAM4qWhbiIDCCOPJVAHZDcjlj9OxBzqejXDwvRv7xX9q2cl6tplKWmjbnrHvrIlll7EaXWjnZIafx2x9KRjH_dCKFOabwU81fKaZmw2TKD08UxXSpRVeoKT6VxiaZkwotS4nbhfQhIVIQCCw5uKB_AmBXEDWUp"/>
+<div class="absolute inset-0 bg-neutral-950/20"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary-container font-label text-[10px] tracking-widest">SECURITY / TECH</span>
+<h3 class="font-headline text-xl font-bold mt-2 uppercase tracking-wide">Cyber Sentinel</h3>
+</div>
+</div>
+</div>
+<!-- Project 3: Wide -->
+<div class="lg:col-span-6 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 group-hover:scale-[0.98]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-95" data-alt="Digital sphere of glowing red particles representing data connections on a pure black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyhuThC5Ts-DVJBPj7cJTi1DbRJPc-l2Ied0Nrev2b0ysPvf-JqJgnGgrn8KsyUbdwvkl9lK8Qi59quB6bZx3j8f1l-cD5oHvJmHfZ7_ZGpAkQblVemHRSUf8__ET7db7YQNmJAWNGI0ZHIFg-zYivK13HhNiNSsi22X3tRB0fakgRFXOsb0yV-lK0j7A-K5GMLkYN1MqdynSvg8wcjUU0vFlEVnEY4NdTER3wqtzAhRU8b_SMmPvFPzxVPNnyxkNlTH8OP0gQRsox"/>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary-container font-label text-[10px] tracking-widest">AI / RESEARCH</span>
+<h3 class="font-headline text-2xl font-bold mt-2 uppercase tracking-wide">Neural Flow</h3>
+</div>
+</div>
+</div>
+<!-- Project 4: Wide -->
+<div class="lg:col-span-6 group cursor-pointer lg:mt-24">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 group-hover:scale-[0.98]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-95" data-alt="Sleek modern smartphone on a textured black rock surface with dramatic low light and red interface glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6FOkkAonMnoHgDavm9ywlVDaKle5qbytyCESDL1DnbvzVu1Ldgy72Q7zftHasHuShY7DcmDs_XkZAVmRUA_qGxTHJHgW9phav3DIzvGcR5ONJQoKVsu9HBxqo7zsDwEMQcf-3zMq66ipQfxYljiZ9iYXlYsHQEApWePhahXz51ZvKtLJ2aEMIjQ0JDqkEGvTSUMqWWsjy6nGZvvKbswhRaxpBVR4qCGyojvJSP-uJxNmU7iR_xsCOQLYPxD3SmJUYtC0nwS1nEbFp"/>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary-container font-label text-[10px] tracking-widest">MOBILE / BRANDING</span>
+<h3 class="font-headline text-2xl font-bold mt-2 uppercase tracking-wide">Vesper App</h3>
+</div>
+</div>
+</div>
+<!-- Project 5: Huge Feature -->
+<div class="lg:col-span-12 group cursor-pointer mt-12">
+<div class="relative h-[500px] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 group-hover:scale-[0.99]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Sophisticated web dashboard with elegant typography and deep red analytics charts on a dark themed interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA-9gCLlKno0hP4aMAuQX3ol8SZvPxuG82ABwarVN3TvsJsfyEctfls-pAiX1UcDHrOQD6-MS-ec-sMYBgsbJCA7drMh98KU4z4P3dEtdgYQntgTtC2ov-k8gAZP5qNrbaaiVclVyN2tpMpieGc_9KzffftG218MgYm8kGHTusXjQVpEo_OLtdPum1PoNXmJdLjeUyjG_3m6EC7pIL1KRTdtgGkDTCmq7SgqhFH07YQ-WoEk6ToEYbV4fcbDQNjSP5WMft9LojaiOo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background to-transparent flex items-center px-12">
+<div class="max-w-xl">
+<span class="text-primary-container font-label text-xs tracking-[0.2em] uppercase">Enterprise Strategy</span>
+<h3 class="font-headline text-5xl font-bold mt-4 mb-6 leading-tight uppercase">Titan OS Ecosystem</h3>
+<p class="font-body text-outline text-lg mb-8">Redefining the internal infrastructure for a global luxury conglomerate through unified design language.</p>
+<button class="flex items-center gap-3 text-on-surface font-label text-sm tracking-widest group-hover:text-primary-container transition-colors">
+                                VIEW CASE STUDY 
+                                <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-48 text-center bg-surface-container-low py-24 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-container/5 blur-[120px] rounded-full"></div>
+<div class="relative z-10 max-w-2xl mx-auto px-6">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6 tracking-tight">READY TO DEFINE YOUR <span class="text-primary-container">LEGACY</span>?</h2>
+<p class="font-body text-outline text-lg mb-12">We are currently accepting a limited number of high-profile commissions for Q4 2024.</p>
+<button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-full font-headline font-bold tracking-widest hover:shadow-[0_0_40px_rgba(255,84,73,0.4)] hover:scale-105 transition-all">
+                    START A PROJECT
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start gap-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-['Epilogue'] text-xl font-bold text-neutral-100 uppercase tracking-tighter">THE NOIR COLLECTIVE</div>
+<p class="font-['Inter'] text-neutral-400 text-sm tracking-wide max-w-xs">Crafting digital prestige through nocturnal aesthetics and uncompromising design standards.</p>
+<span class="font-['Inter'] text-neutral-400 text-sm tracking-wide">© 2024 THE NOIR COLLECTIVE. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-neutral-100 font-label text-[10px] tracking-[0.2em] uppercase">Social</span>
+<a class="text-neutral-500 hover:text-neutral-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Instagram</a>
+<a class="text-neutral-500 hover:text-neutral-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">LinkedIn</a>
+<a class="text-neutral-500 hover:text-neutral-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Twitter</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-neutral-100 font-label text-[10px] tracking-[0.2em] uppercase">Legal</span>
+<a class="text-neutral-500 hover:text-neutral-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Privacy</a>
+<a class="text-neutral-500 hover:text-neutral-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Terms</a>
+</div>
+<div class="flex flex-col gap-4 col-span-2 md:col-span-1">
+<span class="text-neutral-100 font-label text-[10px] tracking-[0.2em] uppercase">Contact</span>
+<a class="text-red-600 font-bold font-['Inter'] text-sm tracking-wide hover:text-red-500 transition-all underline decoration-red-600/30 underline-offset-8" href="mailto:hello@noir.co">hello@noir.co</a>
+</div>
+</div>
+</footer>
+</body></html>

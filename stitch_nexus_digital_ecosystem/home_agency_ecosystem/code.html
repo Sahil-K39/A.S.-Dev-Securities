@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-background": "#e5e2e1",
+                    "on-primary": "#690005",
+                    "on-tertiary": "#003549",
+                    "on-secondary": "#690005",
+                    "on-tertiary-fixed-variant": "#004d68",
+                    "secondary": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "secondary-container": "#911715",
+                    "on-tertiary-container": "#002d3f",
+                    "tertiary-fixed": "#c2e8ff",
+                    "outline-variant": "#5e3f3b",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#001e2c",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-variant": "#353534",
+                    "on-secondary-fixed-variant": "#8d1413",
+                    "primary-container": "#ff5449",
+                    "surface-container-highest": "#353534",
+                    "outline": "#af8783",
+                    "on-primary-fixed": "#410002",
+                    "on-primary-container": "#5c0004",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#77d1ff",
+                    "on-surface": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#93000a",
+                    "inverse-primary": "#c00011",
+                    "on-secondary-fixed": "#410002",
+                    "surface-dim": "#131313",
+                    "tertiary": "#77d1ff",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-container": "#ff9f94",
+                    "surface-tint": "#ffb4ab",
+                    "tertiary-container": "#269bcb",
+                    "primary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-on-surface": "#313030",
+                    "surface-container": "#201f1f",
+                    "secondary-fixed": "#ffdad6",
+                    "surface": "#131313",
+                    "on-surface-variant": "#e8bcb7",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-error": "#690005",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #0B0B0B; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 42, 42, 0.08) 0%, rgba(11, 11, 11, 0) 70%);
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 rounded-full mt-6 mx-auto w-[90%] max-w-7xl glass-nav shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="font-headline text-2xl font-bold tracking-tighter text-neutral-100">NOIR</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-headline tracking-[0.15em] uppercase text-sm text-neutral-100 font-bold border-b-2 border-red-600 pb-1" href="#">Portfolio</a>
+<a class="font-headline tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Services</a>
+<a class="font-headline tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Philosophy</a>
+<a class="font-headline tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Archive</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-8 py-2.5 rounded-full font-label text-xs font-bold uppercase tracking-widest hover:scale-105 transition-transform duration-300">
+            Connect
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 hero-glow">
+<div class="max-w-5xl text-center space-y-8">
+<span class="font-label text-primary-container tracking-[0.3em] font-semibold text-xs uppercase">The Luxury Digital Ecosystem</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-black text-neutral-100 leading-[0.9] tracking-tighter">
+                Build Secure.<br/>Grow Smart.
+            </h1>
+<p class="font-body text-outline text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                A high-precision collaboration between technical architecture and creative storytelling. We engineer the future while defining your brand's presence.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(255,84,73,0.3)] transition-all">
+                    Explore Our Work
+                </button>
+<button class="border border-outline-variant px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest text-on-surface hover:bg-surface-container transition-all">
+                    Contact Us
+                </button>
+</div>
+</div>
+</section>
+<!-- Signature Split Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Tech Card -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden aspect-[4/5] flex flex-col justify-end p-12 transition-all duration-500 hover:bg-surface-container">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay group-hover:scale-105 transition-transform duration-700" data-alt="abstract futuristic digital grid with blue and red server room glowing lights in dark environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA89X3ceACYUppAg1ZLhVuM7TiLmJV4dDZZWtBE-3rXKcsD82A20ewpHGzWVXwZGZhJn3bDDO6ryPYrZlkTDbcy9kz_7JEzpM0WyzBZnhL3MR_0FWc0hr7tnQzJfVOqvbiaV1XuBKNo9O2Ae2TnkwO1lKBwd62cPJt9IVeDtuE4kDWbeSK2z-L-bezG-VEUIt10iVrL34utQXZEO5KvGhaAQR7EQhv0xqFyBvitn3NZ84DE3hsNSJ0V61bYehqXhErugu5IiKohlCm_')"></div>
+<div class="relative z-10 space-y-4">
+<span class="font-label text-xs tracking-widest text-primary-container uppercase">Architecture &amp; Security</span>
+<h3 class="font-headline text-4xl font-bold text-neutral-100 uppercase tracking-tight">A.S. Dev &amp; Securities</h3>
+<p class="font-body text-outline leading-relaxed max-w-xs">Secure Apps, Websites &amp; Cybersecurity infrastructure built for the modern threat landscape.</p>
+<button class="mt-6 flex items-center gap-3 font-label text-sm tracking-widest text-neutral-100 group-hover:text-primary-container transition-colors">
+                        EXPLORE DEVELOPMENT <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Creative Card -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden aspect-[4/5] flex flex-col justify-end p-12 transition-all duration-500 hover:bg-surface-container">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay group-hover:scale-105 transition-transform duration-700" data-alt="creative branding studio setup with high-end cameras and cinematic lighting on a minimalist set" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYgRIvJBh0ZkKALyy6XlqdRo1oB_p6ghqyMjFQEndjHGG0SadShmFPr3cNZJeSEli6btBkCH5SEUE4K4DW4yatmkC-i5D8JSn-b6g_Ne3zbE3IIRBy1NCZhqizrFtpvy66wDUXJWvdjYRhEtgd9N9eHYJIPkkXFHnRvjGWVj2Fu5Vj1UsRt9Ift2UsM6z9saiuwSp70pWdPRMCRtHgpPgrSlRoZ0oCJIV6BDAykYgZRkSx1Z_1NZA512SjzijvUPbLDdk3bfJthuhA')"></div>
+<div class="relative z-10 space-y-4">
+<span class="font-label text-xs tracking-widest text-primary-container uppercase">Visionary Marketing</span>
+<h3 class="font-headline text-4xl font-bold text-neutral-100 uppercase tracking-tight">Deepindram Films</h3>
+<p class="font-body text-outline leading-relaxed max-w-xs">Branding, Marketing &amp; Growth strategies that elevate your story through cinematic precision.</p>
+<button class="mt-6 flex items-center gap-3 font-label text-sm tracking-widest text-neutral-100 group-hover:text-primary-container transition-colors">
+                        EXPLORE GROWTH <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-24 space-y-4">
+<h2 class="font-headline text-4xl font-extrabold uppercase tracking-[0.15em] text-neutral-100">The Edge of Excellence</h2>
+<div class="w-12 h-1 bg-primary-container mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">shield_lock</span>
+<h4 class="font-headline text-lg font-bold text-neutral-100 uppercase tracking-wide">Hardened Security</h4>
+<p class="text-outline text-sm leading-relaxed">Military-grade protection for every digital asset we develop and deploy.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">movie</span>
+<h4 class="font-headline text-lg font-bold text-neutral-100 uppercase tracking-wide">Cinematic Reach</h4>
+<p class="text-outline text-sm leading-relaxed">Storytelling that doesn't just reach audiences, it commands their full attention.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">bolt</span>
+<h4 class="font-headline text-lg font-bold text-neutral-100 uppercase tracking-wide">Rapid Growth</h4>
+<p class="text-outline text-sm leading-relaxed">Data-driven performance marketing optimized for scaling elite luxury brands.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">all_inclusive</span>
+<h4 class="font-headline text-lg font-bold text-neutral-100 uppercase tracking-wide">Fluid Ecosystem</h4>
+<p class="text-outline text-sm leading-relaxed">Seamless integration between technical stability and creative output.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Preview (Bento Grid) -->
+<section class="py-32 px-6 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="space-y-4">
+<span class="font-label text-xs tracking-widest text-primary-container uppercase">Curated Selected Works</span>
+<h2 class="font-headline text-5xl font-black text-neutral-100 uppercase tracking-tight">The Archive</h2>
+</div>
+<p class="font-body text-outline max-w-md text-right">A showcase of technical architecture and visual narratives designed for the world's most ambitious brands.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-8 bg-surface-container-high rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="minimalist 3D abstract render with dark flowing shapes and a single bright red accent light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDedaGjM49hfe0achDLJCnjOnsoV-JkkMB_rwdCO3dYi57gxIUpnQp1WStji0DoMnu_PLGZuzTC5X2nDu8DyqxmOfzbZM-Fy9DB87ViHLVcPSd5xiAMzwwfvk91svF8jgfNCw1xl-08M1OYDrQ_0x3EfRkrECFzrPnTvin00w8KdxGkpy5Y_0cqFPjG9wqarte5Is_Z7cMFY8lTgmMIKi7sNIX7JDVYVqKeAl9wCReFvttqi6hXRyoNEAeDxQyVnHRygaQvYqgMPfSt')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-xs tracking-widest font-label text-primary-container mb-2 uppercase">Brand Identity / Web Dev</p>
+<h4 class="text-2xl font-headline font-bold text-neutral-100 uppercase">Aura Lifestyle</h4>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="close-up of high-tech interface design with sleek typography and neon red accents on dark glass" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADEyaaueQ3o9cjKlvEpo1-gu786nFGeuohIfrj0YfTrso10aAcLCnfTqH6093D5Qv-JIMqWxk-YyLfoAbU5jibWJYqxxOADEl9s9Pghk8vFmOBEQ4chZCqxANp_ZrnwAkmQWvJC63Cfa38ryyQNSHDg2XPLl0oQ0-iAfCo-P-JOVT3bghxraZohE6LuKgqo4NFU48j0W6WWxhxsDWHfybtba8kxHkEznmJQ0k97OWaEhx1dlcd4skA60Q4QiBTan-Z99GHZJjuZlx9')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-xs tracking-widest font-label text-primary-container mb-2 uppercase">Cybersecurity</p>
+<h4 class="text-2xl font-headline font-bold text-neutral-100 uppercase">Nexus Core</h4>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="cinematic shot of luxury product packaging in moody low light with soft highlights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC83vijUv9TsawUpq4Rw2OaAUi_5l3RLZtfB7ctls3a3t9lpESK2M1rA3K6ygqZCOIQI8rtIKXwdioZj2FkddhVNsyW7lLduHc0HjAViiZFWozrHgj7g57dfyB8nnI5s4UtVM7H5mZX0lwBFMnJat3ER24J_XjEacO4TrEHxOcuotXfPWehAwkP2USqp0QcUYSes1zQxcuRwOkygzwAk2ZcMsInSPOG3tPE9rynppNWsgiSEnNq_-RdVLtNCYzicV6QSG0raB2l-Nte')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-xs tracking-widest font-label text-primary-container mb-2 uppercase">Production</p>
+<h4 class="text-2xl font-headline font-bold text-neutral-100 uppercase">Vanguard Films</h4>
+</div>
+</div>
+<div class="md:col-span-8 bg-surface-container-high rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="architectural shot of a modern dark building with linear lights and geometric precision" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDV_HkDJdoA9V7FXY3efJGnOObcoGuImbB85M99FlK8euNL7mUfSAAEMrJhWLDJJaYZAxsZ-Te1nNvXhVwPRzeUd6-tACRMsYMVsZy9_kRbE37WPMw72F8WdmCBi81fkzUZMh30tI2Vucpy8toHwze-XDSevYvOTwTKtpLZFUldCyN7B4zpdxOfiEdrPf7CkFXFSeoYoi-CwmGAYeJDJe3h-yJgcFyYP8L_CTsRTSBoMBMW01G-OzL_pYC9tsvkWt0lKuSrqEiMt1-r')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-xs tracking-widest font-label text-primary-container mb-2 uppercase">Web Infrastructure</p>
+<h4 class="text-2xl font-headline font-bold text-neutral-100 uppercase">Monolith Systems</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Founders Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-24">
+<h2 class="font-headline text-4xl font-extrabold uppercase tracking-[0.15em] text-neutral-100 text-center md:text-left">The Minds Behind Noir</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-16">
+<div class="flex flex-col md:flex-row items-center gap-8 group">
+<div class="w-48 h-48 rounded-full overflow-hidden shrink-0 border-2 border-outline-variant grayscale group-hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="portrait of a tech founder in a black turtleneck, professional lighting, sharp features, confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIEwl4GdCv7isMrkiElOD_NJzZlaDBXyrhi5CduYDhQggsHUeAXYbPhTaI2gWaGnnTWzVXChdd_s_H1y0bmfjh-w9O5kxUXxnADoPSt0lI7DT_diggzsMF8oS_jXLngX1zDHulS0MQ8WiaNzGoFOP3uPG799qw86t3Lha7Lr8kONhE2ija4u5N7kmTCK4nBhg9xgvxTW4LOkdmtiAipp-Ojp1mu88fbTcIF1plGpIeqIEBQv4-lwJWus2Rxp18AxrG1CaY8AMETVTl"/>
+</div>
+<div class="space-y-3 text-center md:text-left">
+<h4 class="font-headline text-2xl font-bold text-neutral-100 uppercase">A.S. Dev</h4>
+<span class="font-label text-primary-container text-xs tracking-widest uppercase">Technical Director</span>
+<p class="text-outline text-sm leading-relaxed">Specializing in high-performance web architecture and enterprise-level cybersecurity systems. Former lead at Global Secure.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 group">
+<div class="w-48 h-48 rounded-full overflow-hidden shrink-0 border-2 border-outline-variant grayscale group-hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="portrait of a creative director with glasses, modern artistic aesthetic, soft studio lighting, intense focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhkg8vfQBs6QQSmA-e4N2FcMlLzH3_DSsKWWW3-0QFEB9qqc1mn3k_hA_aa_B53novZGSYm5jsM5inn5yyfQ3VcoCZ7r46l-t7A4oeYTg9zK0sThXSNLS9JaE8mmi6Y9g86xVT7RxK-c_G55Pm36KLPtq90-V2pv3gPdO0CxsvNg8BSQpoL8tl_j5Orv3Gl-ZSe8mX0cVomyxpOWMejH-VskRgkm3EMyd5OKSTUvOK801qGLbw428jcDU64L1esXNBHLSAcj1h5opi"/>
+</div>
+<div class="space-y-3 text-center md:text-left">
+<h4 class="font-headline text-2xl font-bold text-neutral-100 uppercase">Deepindram</h4>
+<span class="font-label text-primary-container text-xs tracking-widest uppercase">Creative Director</span>
+<p class="text-outline text-sm leading-relaxed">Award-winning filmmaker and branding strategist dedicated to crafting visual identities that define market sectors.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-48 px-6 text-center">
+<div class="max-w-4xl mx-auto space-y-12">
+<h2 class="font-headline text-5xl md:text-7xl font-black text-neutral-100 leading-tight uppercase tracking-tight">Build, Secure, and Scale Your Business With Us</h2>
+<div class="pt-8">
+<button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-full font-label text-base font-bold uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-[0_20px_40px_rgba(255,42,42,0.2)]">
+                    Start Your Project
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start gap-12 max-w-7xl mx-auto">
+<div class="space-y-6 max-w-xs">
+<div class="font-headline text-xl font-bold text-neutral-100">NOIR</div>
+<p class="font-body text-neutral-400 text-sm tracking-wide">An integrated agency collective redefining digital luxury through security and visual narrative.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<span class="font-label text-xs tracking-widest text-neutral-100 uppercase font-bold">Network</span>
+<ul class="space-y-2">
+<li><a class="font-body text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Instagram</a></li>
+<li><a class="font-body text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">LinkedIn</a></li>
+<li><a class="font-body text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Twitter</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-xs tracking-widest text-neutral-100 uppercase font-bold">Legal</span>
+<ul class="space-y-2">
+<li><a class="font-body text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Privacy</a></li>
+<li><a class="font-body text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full md:w-auto text-neutral-400 text-xs tracking-wide self-end md:self-center font-body uppercase opacity-60">
+            © 2024 THE NOIR COLLECTIVE. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>

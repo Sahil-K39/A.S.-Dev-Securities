@@ -1,0 +1,44 @@
+# Environment variables
+.env
+.env*.local
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Build and deployment
+.next
+out
+dist
+build
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Editor directories and files
+.DS_Store
+.vscode
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# IDE
+.idea
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

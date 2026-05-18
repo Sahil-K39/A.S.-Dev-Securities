@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;800&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed-dim": "#ffb4ab",
+                "on-background": "#e5e2e1",
+                "on-primary": "#690005",
+                "on-tertiary": "#003549",
+                "on-secondary": "#690005",
+                "on-tertiary-fixed-variant": "#004d68",
+                "secondary": "#ffb4ab",
+                "error-container": "#93000a",
+                "background": "#131313",
+                "secondary-container": "#911715",
+                "on-tertiary-container": "#002d3f",
+                "tertiary-fixed": "#c2e8ff",
+                "outline-variant": "#5e3f3b",
+                "surface-bright": "#3a3939",
+                "on-tertiary-fixed": "#001e2c",
+                "surface-container-low": "#1c1b1b",
+                "surface-variant": "#353534",
+                "on-secondary-fixed-variant": "#8d1413",
+                "primary-container": "#ff5449",
+                "surface-container-highest": "#353534",
+                "outline": "#af8783",
+                "on-primary-fixed": "#410002",
+                "on-primary-container": "#5c0004",
+                "error": "#ffb4ab",
+                "tertiary-fixed-dim": "#77d1ff",
+                "on-surface": "#e5e2e1",
+                "inverse-surface": "#e5e2e1",
+                "on-primary-fixed-variant": "#93000a",
+                "inverse-primary": "#c00011",
+                "on-secondary-fixed": "#410002",
+                "surface-dim": "#131313",
+                "tertiary": "#77d1ff",
+                "on-error-container": "#ffdad6",
+                "on-secondary-container": "#ff9f94",
+                "surface-tint": "#ffb4ab",
+                "tertiary-container": "#269bcb",
+                "primary": "#ffb4ab",
+                "surface-container-high": "#2a2a2a",
+                "inverse-on-surface": "#313030",
+                "surface-container": "#201f1f",
+                "secondary-fixed": "#ffdad6",
+                "surface": "#131313",
+                "on-surface-variant": "#e8bcb7",
+                "surface-container-lowest": "#0e0e0e",
+                "on-error": "#690005",
+                "primary-fixed": "#ffdad6",
+                "secondary-fixed-dim": "#ffb4ab"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Epilogue"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .text-glow:hover {
+            text-shadow: 0 0 15px rgba(255, 42, 42, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 rounded-full mt-6 mx-auto w-[90%] max-w-7xl glass-nav shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="font-['Epilogue'] text-2xl font-bold tracking-tighter text-neutral-100 uppercase">NOIR</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-100 font-bold border-b-2 border-red-600 pb-1 hover:scale-105 transition-transform duration-300" href="#">Portfolio</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors hover:scale-105 transition-transform duration-300" href="#">Philosophy</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors hover:scale-105 transition-transform duration-300" href="#">Archive</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-8 py-2 rounded-full font-['Epilogue'] font-bold tracking-widest uppercase text-xs hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,84,73,0.3)]">
+            Connect
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 px-8">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background z-10"></div>
+<img alt="Cinematic background" class="w-full h-full object-cover opacity-40" data-alt="Cinematic wide shot of a film set with professional lighting equipment, silhouettes of crew members in a moody atmospheric studio environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWvOu-TqnMlH1d9Wasd0zyeFdGOgxVSoBzRb8ZPizKi8MQo_2yEeWxgA9XpxxepKXh5UG9AtEYNjGJ7PhpvWrtoBpwfZ-6-FSFXDKG-icp2dPviOqw0sG3kCeG0q-_rBeSXTfyO9sQnmFXgO-ZuqrNJOHMyuhuwFlcbAGYv93bNHYxT5XgHaxdOdMOyPh0cc-Ergq1Pn9EQsr-cL1WjuHPbY25gIz8rBWVBcOewXnyYgE7rfCARsRhxmwj5WitmpYmPFD_L_-4j83d"/>
+</div>
+<div class="relative z-20 text-center max-w-5xl">
+<span class="inline-block font-label tracking-[0.4em] text-primary mb-6 animate-pulse">ESTABLISHED MMXXIV</span>
+<h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-none">
+                CRAFTING <span class="text-transparent bg-clip-text bg-gradient-to-r from-on-surface via-primary to-on-surface">VISUAL</span> LEGACIES.
+            </h1>
+<p class="font-body text-xl md:text-2xl text-outline max-w-2xl mx-auto leading-relaxed opacity-80">
+                Deepindram Films &amp; Ad Agency. We blend cinematic storytelling with aggressive growth strategies to define the next generation of brands.
+            </p>
+<div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="px-10 py-4 bg-primary text-on-primary rounded-full font-headline font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg">View Showreel</button>
+<button class="px-10 py-4 border border-outline-variant text-on-surface rounded-full font-headline font-bold uppercase tracking-widest hover:bg-surface-container-high transition-all">Our Philosophy</button>
+</div>
+</div>
+</header>
+<!-- Branding Section (Asymmetric) -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 space-y-8">
+<h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-widest leading-tight">
+                    Identity <br/><span class="text-primary">&amp;</span> Essence
+                </h2>
+<div class="w-24 h-1 bg-primary"></div>
+<p class="text-outline text-lg leading-relaxed">
+                    Branding is more than a logo; it's a pulse. We dissect your brand's DNA to create visual languages that resonate in the silence of a crowded market.
+                </p>
+<ul class="space-y-4 font-headline uppercase tracking-widest text-sm">
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary" data-icon="token">token</span> Visual Architecture</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary" data-icon="palette">palette</span> Chromatic Strategy</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span> Narrative Design</li>
+</ul>
+</div>
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Abstract Branding" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Close-up of minimalist brand identity materials on high-quality textured paper, featuring elegant typography and clean geometric lines in a studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZr1gFuk9ZRMJ39ILR_v5Fz5lYzDMTkvtvyo4KryDWLxs7tpjAvmDfPXZ_VG7xk4us0wSsmQUa-UIyn9fdm01Xl_Ckk-jwKqTldAErwUqmaIbBV28hWB5EIEgwQhmWO4ZaNf77TY4VJjkufS8tyf5EJfVqmWa79hqUuS0fsYBAbNzazGLOrvUDlPb5ujh652Zl2MELobkMgRU6RdRyUNxMeyX05TCtal_NEQet7QfNi7CXQoxMo0OqbmObtWEVFJWE7vpIA5yOsGKL"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-high p-8 rounded-lg shadow-2xl hidden md:block max-w-xs">
+<p class="font-headline font-bold text-primary text-3xl italic">"Impact is silent until it's felt."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Marketing & Growth (Bento Grid) -->
+<section class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center md:text-left">
+<span class="font-label tracking-widest text-primary">SCALABILITY</span>
+<h2 class="font-headline text-5xl font-bold uppercase tracking-tighter mt-4">Growth Architectures</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Digital Marketing -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between group overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="font-headline text-3xl font-bold uppercase mb-4">Marketing Synergy</h3>
+<p class="text-outline leading-relaxed max-w-sm">We don't just run ads; we engineer digital ecosystems where every touchpoint fuels the next. Data-driven, human-centered.</p>
+</div>
+<div class="absolute bottom-0 right-0 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[300px]" data-icon="query_stats" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+</div>
+<button class="relative z-10 w-fit mt-8 flex items-center gap-2 font-headline uppercase text-sm tracking-widest text-primary hover:gap-4 transition-all">
+                        Explore Method <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Growth Strategy -->
+<div class="md:col-span-2 bg-surface-container-high rounded-xl p-8 flex items-center gap-8 group">
+<div class="w-1/3 aspect-square rounded-lg overflow-hidden shrink-0">
+<img alt="Growth" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A futuristic digital data visualization screen with glowing graphs and numbers representing rapid financial and brand growth in a dark office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDovsxpJiFpSOZl2WYZ6eBR100wHCXYAFFh1XRmsC7aUtWLCZBAWA-o3zX9GN9_koC9T1tEqkIaW11ETqO9ICHmC9DkzusbtmFX_TQ8CDK0l3JmHUXPABSiJc15af9z7_RIR__XsB-caY5Qfp8AMAztNVjwPiOL46UJmHIP3P1bCZUdpDwO-1MgQNSVAvUB0RFlc36K4118fIAvMemStXXeqo_JwTTihJISTBhsCMRM5MvEIJvg45y8lniA9BBwhtoz-u5NEpmoK-Wi"/>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold uppercase mb-2">Growth Strategies</h3>
+<p class="text-outline text-sm">Long-form scaling through algorithmic dominance and community cultivation.</p>
+</div>
+</div>
+<!-- Production -->
+<div class="md:col-span-1 bg-surface-container-high rounded-xl p-8 flex flex-col justify-center text-center group">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 mx-auto group-hover:scale-125 transition-transform" data-icon="movie">movie</span>
+<h3 class="font-headline font-bold uppercase text-sm tracking-widest">Film Unit</h3>
+</div>
+<!-- Ad Agency -->
+<div class="md:col-span-1 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center text-center group">
+<span class="material-symbols-outlined text-4xl mb-4 mx-auto group-hover:rotate-12 transition-transform" data-icon="campaign">campaign</span>
+<h3 class="font-headline font-bold uppercase text-sm tracking-widest">Ad Lab</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Campaign Gallery (Visual Heavy) -->
+<section class="py-32 px-4 md:px-0">
+<div class="max-w-7xl mx-auto px-4 mb-16 flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-xl">
+<span class="font-label tracking-widest text-primary uppercase">Portfolio</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">Selected <br/>Campaigns</h2>
+</div>
+<p class="text-outline text-lg max-w-sm pb-2 border-b border-outline-variant">
+                An archive of high-velocity visual narratives that moved the needle.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="relative aspect-video md:aspect-[3/4] overflow-hidden group">
+<img alt="Campaign 1" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000" data-alt="Stylized cinematic close-up of a high-end luxury watch under neon red lighting, highlighting chrome details and elegant craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXmgN9vVyPseuf6KeaPNm-P8IVJYpklQ4RF15CZNxuENspV8QqRMyP2G5dYZiuJwVvW6tVBTo8Zwn8EFlpn43OBNsn_1w_x0cgriTwM1rllaTj7BqwzlYzIO77ASNFRmAqup32X2JYJTfgbUhBVha4U1fgHJYBqqfsUTR3edltcZdgPdIzzuDYKWllHnkLl7GiCwYIX5D-z5fmby1O9n8DTWpmVJ3xRL-xLQYI06tdpZ--CFZXhIlE6jJ8bYPuvz7tSlao4dhBLHvO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-primary mb-2">CINEMATIC AD</span>
+<h3 class="font-headline text-2xl font-bold uppercase">The Nocturne Series</h3>
+</div>
+</div>
+<div class="relative aspect-video md:aspect-[3/4] overflow-hidden group">
+<img alt="Campaign 2" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000" data-alt="Dramatic urban fashion shoot featuring a model in an oversized tech-wear jacket, walking through a rainy city street at night under red signs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5UQYULL2Wk20efRlEW12vSMVtQFfRNSXbBFhagu1IQXpOKMQIyYj9t4E28z4b7T_5-XvM7hXE2u038VbU-V6g914huATL031rZnXwKTuO7gAg-nITzdpKsZHLbZPmOYk5PCL4q8wiwY8-VZf3wNoTgJGSKF9Dc7KC1ItM69pPvWwnm7UvYwSpj6d5DHxd3RiSTCM-rZXZU-0h9OjZqlzv_U-V8DfAH1V5lEtwUS5zBrmGpr__pp47Lnwe88Kd_NcUZJ_viexsJ75F"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-primary mb-2">BRAND STORY</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Urban Echo</h3>
+</div>
+</div>
+<div class="relative aspect-video md:aspect-[3/4] overflow-hidden group">
+<img alt="Campaign 3" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000" data-alt="Behind-the-scenes shot of a film director looking through a viewfinder on a professional cinema camera during a dramatic desert sunset shoot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnsUOmUEaRJmQlKKo9EMAIkzza_sYyladwu9EuADenruN5-KuAC5qzL8-p0G7uyppGwbTGWZPZGdxnwvKlmaSCiQAOy2efDA5pazY4U1CQoNvv2k8vXPgWf85BxuqVraaSyO66oaIFFEKjURBSchQVx0fFA3t7uaBt2TktB01i2CRWyxCp5Tq5YOcpORXmGavhOmKjDwFqA5bZYw3qLVq13C4QG6hl0jXjApwGepX4P198U-J7UF0Wo_y__mHhzFzHQcQeQns5TlEt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-primary mb-2">DOCUSERIES</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Infinite Horizon</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="py-32 px-8 bg-surface-container-low overflow-hidden relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-4xl md:text-7xl font-extrabold uppercase tracking-tighter mb-12">
+                WE DO NOT <span class="italic text-primary">DECORATE</span>. WE <span class="underline decoration-primary/40 underline-offset-8">COMMUNICATE</span>.
+            </h2>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-16">
+                Deepindram Films was founded on the belief that advertising shouldn't feel like an interruption. It should be an invitation into a world where the brand is the hero of its own myth.
+            </p>
+<div class="flex justify-center gap-12">
+<div class="text-center">
+<div class="font-headline text-4xl font-bold text-primary mb-2">124+</div>
+<div class="font-label text-xs tracking-widest text-outline">PROJECTS</div>
+</div>
+<div class="text-center">
+<div class="font-headline text-4xl font-bold text-primary mb-2">12</div>
+<div class="font-label text-xs tracking-widest text-outline">AWARDS</div>
+</div>
+<div class="text-center">
+<div class="font-headline text-4xl font-bold text-primary mb-2">09M</div>
+<div class="font-label text-xs tracking-widest text-outline">REACH</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-['Epilogue'] text-xl font-bold text-neutral-100 uppercase">NOIR COLLECTIVE</div>
+<p class="font-['Inter'] text-neutral-400 text-sm tracking-wide max-w-xs leading-loose">
+                Transforming brands into cultural landmarks through cinematic excellence and strategic growth.
+            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary hover:scale-110 transition-transform cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary hover:scale-110 transition-transform cursor-pointer" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-primary hover:scale-110 transition-transform cursor-pointer" data-icon="location_on">location_on</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<h4 class="font-headline text-xs font-bold text-neutral-100 tracking-widest uppercase">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Portfolio</a></li>
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Services</a></li>
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Philosophy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-xs font-bold text-neutral-100 tracking-widest uppercase">Social</h4>
+<ul class="space-y-2">
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Instagram</a></li>
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">LinkedIn</a></li>
+<li><a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-sm" href="#">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full md:w-auto mt-12 md:mt-0 flex flex-col items-start md:items-end gap-4">
+<div class="font-['Inter'] text-neutral-400 text-sm tracking-wide uppercase">© 2024 THE NOIR COLLECTIVE. ALL RIGHTS RESERVED.</div>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-xs underline decoration-red-600 underline-offset-4 uppercase" href="#">Privacy</a>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors text-xs underline decoration-red-600 underline-offset-4 uppercase" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>

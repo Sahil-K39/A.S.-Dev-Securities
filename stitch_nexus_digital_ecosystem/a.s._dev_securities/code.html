@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOIR | A.S. Dev &amp; Securities</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-background": "#e5e2e1",
+                    "on-primary": "#690005",
+                    "on-tertiary": "#003549",
+                    "on-secondary": "#690005",
+                    "on-tertiary-fixed-variant": "#004d68",
+                    "secondary": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "secondary-container": "#911715",
+                    "on-tertiary-container": "#002d3f",
+                    "tertiary-fixed": "#c2e8ff",
+                    "outline-variant": "#5e3f3b",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#001e2c",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-variant": "#353534",
+                    "on-secondary-fixed-variant": "#8d1413",
+                    "primary-container": "#ff5449",
+                    "surface-container-highest": "#353534",
+                    "outline": "#af8783",
+                    "on-primary-fixed": "#410002",
+                    "on-primary-container": "#5c0004",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#77d1ff",
+                    "on-surface": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#93000a",
+                    "inverse-primary": "#c00011",
+                    "on-secondary-fixed": "#410002",
+                    "surface-dim": "#131313",
+                    "tertiary": "#77d1ff",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-container": "#ff9f94",
+                    "surface-tint": "#ffb4ab",
+                    "tertiary-container": "#269bcb",
+                    "primary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-on-surface": "#313030",
+                    "surface-container": "#201f1f",
+                    "secondary-fixed": "#ffdad6",
+                    "surface": "#131313",
+                    "on-surface-variant": "#e8bcb7",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-error": "#690005",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0B0B0B;
+            color: #EAEAEA;
+        }
+        .glass-nav {
+            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .red-glow-hover:hover {
+            box-shadow: 0 0 15px rgba(255, 42, 42, 0.2);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 rounded-full mt-6 mx-auto w-[90%] max-w-7xl bg-neutral-900/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="font-['Epilogue'] text-2xl font-bold tracking-tighter text-neutral-100">NOIR</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-100 font-bold border-b-2 border-red-600 pb-1" href="#">Portfolio</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Services</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Philosophy</a>
+<a class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Archive</a>
+</div>
+<button class="font-['Epilogue'] tracking-[0.15em] uppercase text-sm bg-primary-container text-on-primary-container px-8 py-2 rounded-full font-bold hover:scale-105 transition-transform duration-300">Connect</button>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="editorial-grid gap-8 items-end">
+<div class="col-span-12 md:col-span-8">
+<span class="font-label text-primary-container tracking-widest text-xs uppercase mb-4 block">Security First Architecture</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 leading-none">A.S. DEV &amp; <br/><span class="text-primary-container">SECURITIES</span></h1>
+<p class="font-body text-outline text-lg max-w-xl">Engineering impenetrable digital ecosystems. We combine elite software development with offensive security measures to protect your most critical assets.</p>
+</div>
+<div class="col-span-12 md:col-span-4 hidden md:block">
+<div class="bg-surface-container-high p-8 rounded-xl aspect-square flex flex-col justify-between border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-4xl text-primary-container">verified_user</span>
+<div class="font-headline text-3xl font-bold">256-BIT<br/>ENCRYPTION</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Development Services -->
+<section class="max-w-7xl mx-auto px-8 mb-48">
+<h2 class="font-headline text-3xl tracking-[0.15em] uppercase mb-16 border-b border-outline-variant/20 pb-4">Core Development</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1 -->
+<div class="group">
+<div class="mb-6 overflow-hidden rounded-lg">
+<img alt="Code on screen" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close-up of clean source code on a high-resolution monitor in a dark room with subtle red ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgYhFbxb8StrQ_APHfTBZv8j_phAI9SaCEfIe8fU0OngYXoiR6H5iNUDyTKJwP6gH9-s9rk0toiLZd7njqHDbCwgOLtLckT0Z1Uef_bV1E-twPYrpSnjBbiAYffaZy_X1-rsQfr4qH75SY8Xa3tb7hi2isudHUKAzHQjYXP9OKylXP3B5p867UmyA4zfQozStlmIHRoGntaJpukWxNGUDuMsNxYHp5hu2bRSGFFbT_dpBATaxrcHxbo_yXFP2Dwqjsd3RZTHQGkcDo"/>
+</div>
+<h3 class="font-headline text-xl mb-4 tracking-wider">ROBUST BACKEND</h3>
+<p class="text-outline text-sm leading-relaxed">Scalable server-side logic built with Rust and Go, optimized for low latency and high concurrency environments.</p>
+</div>
+<!-- Service 2 -->
+<div class="group">
+<div class="mb-6 overflow-hidden rounded-lg">
+<img alt="Data visualization" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract data visualization with red neon nodes and glowing paths on a deep black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjTc5lYIJM3-XFfknU8u5iV16W3JQsAt3VF25RP_lwqr8gXiOZDHpZ2CLZttq1aEQZMNVC74fs8F5WkuG78fZk1e-3AqMqCGQx22M1T89k6rGeMmnKAaTKyWb1kVIniSplOqe6fcr350YF-RBl3b7fKVGHBrufpT6DPinrtOlX8bZQ6f0Zq5seWJDCSnY41rsCob1EHB1XmEmO8UuXHEQ98SmoF7b5cy1IYcwDs8N3OgRvyKwfBijnbpO-pLBIoT55zNW4FQCukK1L"/>
+</div>
+<h3 class="font-headline text-xl mb-4 tracking-wider">SMART CONTRACTS</h3>
+<p class="text-outline text-sm leading-relaxed">Audited blockchain solutions ensuring transactional integrity and decentralized security protocols for Web3.</p>
+</div>
+<!-- Service 3 -->
+<div class="group">
+<div class="mb-6 overflow-hidden rounded-lg">
+<img alt="Electronic circuit" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Extreme macro shot of a sleek black circuit board with red power indicators glowing softly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy8s222appQFCjlj6zXGpAT9tJ95441Yfk7gRNG-K88xAwogr7lfBnI0Xd1IYEWgIUPZ-CvFkicuP13IY3FLpwwdfo4dlB3vRD-bAGjgfyRynUX8ncQEt0V5iNzJeYX8ZPeTougymxVXvEA32I3uyWqRElvB2V2gq4YQZAqq25SIhmH8mOG_GbqZdj6ZG5zsUR3S8MmnBxgJP8PXs76YqJqX78zfWexgCD3b5W3-3bDgYdUV5k2S9EfpTSbUhX9cg0AY7uVMq4TBf6"/>
+</div>
+<h3 class="font-headline text-xl mb-4 tracking-wider">SYSTEMS ARCHITECTURE</h3>
+<p class="text-outline text-sm leading-relaxed">Architecting complex microservices infrastructures that maintain high availability under extreme conditions.</p>
+</div>
+</div>
+</section>
+<!-- Cyber Security Bento Grid -->
+<section class="bg-surface-container-lowest py-32 mb-48">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="font-label text-primary-container tracking-widest text-xs uppercase mb-4 block">Defensive Strategy</span>
+<h2 class="font-headline text-3xl tracking-[0.15em] uppercase">Cybersecurity Suite</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-high p-12 rounded-xl flex flex-col justify-end relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-6xl text-primary-container/20 group-hover:text-primary-container transition-colors" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="font-headline text-3xl mb-6 tracking-wider">PENETRATION<br/>TESTING</h3>
+<p class="text-outline max-w-sm">We simulate advanced persistent threats to identify and patch vulnerabilities before malicious actors find them.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container p-8 rounded-xl flex items-center gap-8 border-l-2 border-primary-container">
+<div class="bg-surface-container-lowest p-4 rounded-full">
+<span class="material-symbols-outlined text-primary-container text-3xl">visibility</span>
+</div>
+<div>
+<h4 class="font-headline text-lg tracking-widest uppercase mb-1">Threat Monitoring</h4>
+<p class="text-outline text-sm">Real-time surveillance of network traffic and system logs.</p>
+</div>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-colors">
+<h4 class="font-headline text-sm tracking-widest uppercase mb-4">Incident Response</h4>
+<span class="material-symbols-outlined text-primary-container">speed</span>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-colors">
+<h4 class="font-headline text-sm tracking-widest uppercase mb-4">Identity Access</h4>
+<span class="material-symbols-outlined text-primary-container">fingerprint</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack Badges -->
+<section class="max-w-7xl mx-auto px-8 mb-48">
+<div class="text-center mb-16">
+<h2 class="font-headline text-xl tracking-[0.2em] uppercase text-outline">Engineered with Precision</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">KUBERNETES</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">RUST</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">DOCKER</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">AWS SHIELD</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">GO-LANG</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">TERRAFORM</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">POSTGRE SQL</span>
+</div>
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-3 border border-outline-variant/10 hover:border-primary-container/30 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label text-xs tracking-widest">REACT NEXT.JS</span>
+</div>
+</div>
+</section>
+<!-- Development Process Timeline -->
+<section class="max-w-4xl mx-auto px-8 mb-48">
+<h2 class="font-headline text-3xl tracking-[0.15em] uppercase mb-24 text-center">Development Journey</h2>
+<div class="space-y-16 relative">
+<!-- Vertical Line -->
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/20 -translate-x-1/2"></div>
+<!-- Step 1 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right pr-12">
+<h4 class="font-headline text-lg mb-2">AUDIT</h4>
+<p class="text-outline text-sm">Deep analysis of current infrastructure and security posture.</p>
+</div>
+<div class="z-10 bg-primary-container w-4 h-4 rounded-full ring-8 ring-background"></div>
+<div class="w-5/12 pl-12">
+<span class="font-headline text-primary-container/20 text-4xl font-extrabold">01</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-center justify-between flex-row-reverse">
+<div class="w-5/12 text-left pl-12">
+<h4 class="font-headline text-lg mb-2">ARCHITECT</h4>
+<p class="text-outline text-sm">Blueprinting secure-by-design systems using modern standards.</p>
+</div>
+<div class="z-10 bg-primary-container w-4 h-4 rounded-full ring-8 ring-background"></div>
+<div class="w-5/12 pr-12 text-right">
+<span class="font-headline text-primary-container/20 text-4xl font-extrabold">02</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right pr-12">
+<h4 class="font-headline text-lg mb-2">DEPLOY</h4>
+<p class="text-outline text-sm">Iterative engineering with CI/CD and automated security scans.</p>
+</div>
+<div class="z-10 bg-primary-container w-4 h-4 rounded-full ring-8 ring-background"></div>
+<div class="w-5/12 pl-12">
+<span class="font-headline text-primary-container/20 text-4xl font-extrabold">03</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-center justify-between flex-row-reverse">
+<div class="w-5/12 text-left pl-12">
+<h4 class="font-headline text-lg mb-2">FORTIFY</h4>
+<p class="text-outline text-sm">Ongoing monitoring, red-teaming, and system hardening.</p>
+</div>
+<div class="z-10 bg-primary-container w-4 h-4 rounded-full ring-8 ring-background"></div>
+<div class="w-5/12 pr-12 text-right">
+<span class="font-headline text-primary-container/20 text-4xl font-extrabold">04</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mb-48">
+<div class="bg-surface-container-high rounded-xl p-16 flex flex-col items-center text-center">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 max-w-2xl">READY TO SECURE YOUR DIGITAL LEGACY?</h2>
+<button class="bg-primary-container text-on-primary-container px-12 py-4 rounded-full font-headline tracking-[0.15em] text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(255,42,42,0.3)]">INITIATE CONNECTION</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-neutral-950">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-4">
+<div class="font-['Epilogue'] text-xl font-bold text-neutral-100">NOIR</div>
+<p class="font-['Inter'] text-neutral-400 text-sm tracking-wide max-w-xs">© 2024 THE NOIR COLLECTIVE. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="font-headline text-xs tracking-widest text-primary-container">CONNECT</h5>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors" href="#">Instagram</a>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors" href="#">Twitter</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-headline text-xs tracking-widest text-primary-container">LEGAL</h5>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors" href="#">Privacy</a>
+<a class="font-['Inter'] text-neutral-500 hover:text-neutral-100 transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
