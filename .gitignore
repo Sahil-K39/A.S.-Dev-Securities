@@ -9,6 +9,12 @@ node_modules
 /.pnp
 .pnp.js
 
+# Package managers (keep only npm)
+pnpm-lock.yaml
+pnpm-workspace.yaml
+yarn.lock
+.yarn/
+
 # Build and deployment
 .next
 out
