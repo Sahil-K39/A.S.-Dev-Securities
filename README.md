@@ -88,28 +88,38 @@ CONTACT_WEBHOOK_URL=your_webhook_url
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deployed on Vercel
+
+This project is currently deployed on [Vercel](https://vercel.com) for optimal performance and seamless Next.js integration.
+
+**Live Site**: [Visit AS Dev Website](https://asdev.vercel.app)
+
+### Deploy Your Own to Vercel
 
 The easiest way to deploy is using [Vercel](https://vercel.com):
 
 1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically detect Next.js and deploy
-
-### Deploy to Netlify
-
-1. Build the project: `npm run build`
-2. Connect your repository to Netlify
-3. Set build command: `npm run build`
-4. Set publish directory: `.next`
+2. Go to [vercel.com](https://vercel.com) and sign up
+3. Click "New Project" and import your GitHub repository
+4. Vercel will automatically detect Next.js configuration
+5. Click "Deploy" - your site is live!
 
 ## 📄 License
 
-[Add your license here]
+© 2024-2026 **AS Dev Team**. All rights reserved.
+
+This project is proprietary and created for AS Dev Securities and Deepindram Films. Unauthorized copying, distribution, or use of this project without explicit permission is strictly prohibited.
+
+For licensing inquiries, contact: [contact@asdev.com](mailto:contact@asdev.com)
 
 ## 👤 Author
 
-Deepindram & AS Dev Team
+**AS Dev Team**  
+**Deepindram & Associates**
+
+- 🌐 Website: [asdev.vercel.app](https://asdev.vercel.app)
+- 📧 Email: [contact@asdev.com](mailto:contact@asdev.com)
+- 🔐 Specializing in: Web Development, Digital Marketing, 3D Design & Animation
 
 ## 🤝 Contributing
 
